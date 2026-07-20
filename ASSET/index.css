@@ -141,7 +141,7 @@ box-shadow:5px 5px 10px gray;
 
         .hero-bg-image {
             position: absolute;
-            inset: 0;
+            inset: 100;
             background-image: url('/ASSET/deen.jpg');
             background-size: cover;
             background-position: center 50%;
