@@ -1,0 +1,76 @@
+body {
+background-color: black;
+font-family: Arial, sans-serif;
+text-align: center;
+    padding-top:50px;
+}
+
+.card {
+
+width:300px;
+margin:auto;
+background-color:red;
+padding:20px;
+border-radius:15px;
+box-shadow:5px 5px 10px gray;
+
+}
+
+.hero-name { font-size: 2.2rem; }
+.typewriter-wrap { 
+                font-size: 1.3rem; }
+.hero-bg-content { padding: 40px 25px; }
+.grabbit-section { padding: 40px 22px; }
+            .section-heading { font-size: 1.6rem; }
+            :root { --space-section: 60px; }
+
+:root {
+            --bg-void: #0b0d0b;
+            --bg-panel: #121612;
+            --bg-panel-alt: #161d16;
+            --border-dim: #1a221a;
+            --accent: #00ff88;
+            --accent-dim: #0a5c33;
+            --text-main: #ffffff;
+            --text-soft: #b3cbb3;
+            --text-mute: #8ba28b;
+            --text-mute-2: #a4bfa4;
+
+            --radius-lg: 24px;
+            --radius-md: 16px;
+            --radius-sm: 10px;
+            --space-section: 90px;
+        }
+
+        * { box-sizing: border-box; }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            background-color: var(--bg-void);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        section { scroll-margin-top: 90px; }
+
+        p { color: var(--text-mute-2); }
+
+        /* ============ NAVBAR ============ */
+.navbar {
+            background-color: rgba(18, 22, 18, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 2px solid var(--border-dim);
+            padding: 15px 0;
+        }
+.navbar-brand { color: var(--accent); font-weight: 800; letter-spacing: 1.5px; font-size: 1.4rem; }
+.navbar-toggler { border-color: var(--accent); background-color: rgba(0, 255, 136, 0.1); }
+.navbar-toggler:focus { box-shadow: 0 0 0 0.2rem rgba(0,255,136,0.25); }
+.navbar-toggler-icon { filter: invert(1) sepia(1) saturate(5) hue-rotate(90deg); }
+        .nav-link { color: var(--text-main); margin-left: 15px; font-weight: 500; transition: color 0.2s ease; }
+        .nav-link:hover, .nav-link:focus { color: var(--accent); }
+        .nav-link.active { color: var(--accent); border-bottom: 2px solid var(--accent); }
+
+
