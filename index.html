@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="/ASSET/code.css">
+    <link rel="stylesheet" href="/ASSET/index.css">
 </head>
 <body>
 
@@ -24,6 +24,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navMenu">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                         <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
@@ -40,7 +41,7 @@
 
     <main>
 
-        <section id="about" class="hero-section">
+        <section id="home" class="hero-section">
             <div class="hero-overlay"></div>
             <div class="container hero-content">
                 <h1>Hi, I'm Sherif Mohammed Sumaila</h1>
@@ -65,73 +66,251 @@
             </div>
         </section>
 
-        <!-- ================= EDUCATION ================= -->
-<section id="education" class="section-wrap">
-  <div class="section-head">
-    <h2 class="section-heading">Education and Certifications</h2>
-    <p class="section-sub">Academic background and credentials.</p>
+
+        <!-- ================= EDUCATION SECTION — NEON THEME ================= -->
+        <section class="edu-section" id="education">  
+  <div class="edu-header">
+    <h2 class="grid-title">EDUCATION</h2>
+    <span class="edu-tagline">My Academic Journey</span>
   </div>
-  
-  <div class="edu-timeline">
-    
-    <!-- Item 1 -->
-    <div class="edu-card">
-      <div class="edu-image-box">
-        <img src="/ASSET/ALCHE.jpg" alt="African Leadership University">
-      </div>
-      <div class="edu-content">
-        <h3 class="edu-institution">African Leadership University</h3>
-        <p class="edu-programme">B.Sc. Computer Science</p>
-        <div class="edu-dates">
-          <span><strong>Start:</strong> Sep 2023</span> &bull; <span><strong>End:</strong> Present</span>
+
+  <div class="edu-grid">
+
+    <!-- Card 1 -->
+    <article class="edu-panel">
+      <div class="edu-panel-top">
+        <span class="edu-index">01.</span>
+        <div class="edu-meta-right">
+          <span class="edu-badge edu-badge-active">CURRENT</span>
+          <span class="edu-period">OCT 2025 - PRESENT</span>
         </div>
       </div>
+      <div class="edu-brand-bar">
+        <img src="/ASSET/ALCHE.jpg" alt="ALCHE Logo" class="edu-logo">
+        <div>
+          <h3 class="edu-degree">Undergraduate Student</h3>
+          <p class="edu-school">The African Leadership College of Higher Education (ALCHE)</p>
+        </div>
+      </div>
+      <p class="edu-summary">Engaging in core academic paths, professional development tracks, and foundational skill acceleration programs.</p>
+      <div class="edu-divider"></div>
+      <ul class="edu-highlights">
+        <li><span class="hl-marker">&gt;</span> Mastering strategic problem-solving through intensive peer-led leadership models.</li>
+        <li><span class="hl-marker">&gt;</span> Developing technical foundations aligned with regional and global tech ecosystems.</li>
+      </ul>
+      <div class="edu-chip-row">
+        <span class="edu-chip">Leadership</span>
+        <span class="edu-chip">Support</span>
+        <span class="edu-chip">Strategy</span>
+      </div>
+    </article>
+
+    <!-- Card 2 -->
+    <article class="edu-panel">
+      <div class="edu-panel-top">
+        <span class="edu-index">02.</span>
+        <div class="edu-meta-right">
+          <span class="edu-badge">COMPLETED</span>
+          <span class="edu-period">SEP 2021 - JUN 2025</span>
+        </div>
+      </div>
+      <div class="edu-brand-bar">
+        <img src="/ASSET/temasco.jpg" alt="Tema Secondary School Logo" class="edu-logo">
+        <div>
+          <h3 class="edu-degree">High School Graduate</h3>
+          <p class="edu-school">Tema Secondary School</p>
+        </div>
+      </div>
+      <p class="edu-summary">Completed advanced secondary studies with a focus on science, mathematics, and extracurricular leadership roles.</p>
+      <div class="edu-divider"></div>
+      <ul class="edu-highlights">
+        <li><span class="hl-marker">&gt;</span> Led student body initiatives to improve peer tutoring networks across STEM subjects.</li>
+        <li><span class="hl-marker">&gt;</span> Graduated with distinctions in core academic and technical electives.</li>
+      </ul>
+      <div class="edu-chip-row">
+        <span class="edu-chip">Academic</span>
+        <span class="edu-chip">Foundations</span>
+        <span class="edu-chip">Science</span>
+      </div>
+    </article>
+
+    <!-- Card 3 -->
+    <article class="edu-panel">
+      <div class="edu-panel-top">
+        <span class="edu-index">03.</span>
+        <div class="edu-meta-right">
+          <span class="edu-badge edu-badge-active">CURRENT</span>
+          <span class="edu-period">NOV 2025 - PRESENT</span>
+        </div>
+      </div>
+      <div class="edu-brand-bar">
+        <img src="/ASSET/ALX.jpg" alt="ALX Logo" class="edu-logo">
+        <div>
+          <h3 class="edu-degree">Software Engineering Fellow</h3>
+          <p class="edu-school">ALX Pathway</p>
+        </div>
+      </div>
+      <p class="edu-summary">Immersive training in full-stack software development, software architecture, and production readiness engineering.</p>
+      <div class="edu-divider"></div>
+      <ul class="edu-highlights">
+        <li><span class="hl-marker">&gt;</span> Building scalable web architectures with a focus on optimized backend APIs.</li>
+        <li><span class="hl-marker">&gt;</span> Collaborating on cross-functional developer teams utilizing agile project frameworks.</li>
+      </ul>
+      <div class="edu-chip-row">
+        <span class="edu-chip">Tech</span>
+        <span class="edu-chip">Software</span>
+        <span class="edu-chip">Engineering</span>
+      </div>
+    </article>
+
+    <!-- Card 4 -->
+    <article class="edu-panel">
+      <div class="edu-panel-top">
+        <span class="edu-index">04.</span>
+        <div class="edu-meta-right">
+          <span class="edu-badge">COMPLETED</span>
+          <span class="edu-period">FEB 2025 - AUG 2025</span>
+        </div>
+      </div>
+      <div class="edu-brand-bar">
+        <img src="/ASSET/Aspire.jpg" alt="Aspire Logo" class="edu-logo">
+        <div>
+          <h3 class="edu-degree">Aspire Fellow</h3>
+          <p class="edu-school">Aspire Institute</p>
+        </div>
+      </div>
+      <p class="edu-summary">Participated in global leadership development courses designed by Harvard faculty for first-generation college students.</p>
+      <div class="edu-divider"></div>
+      <ul class="edu-highlights">
+        <li><span class="hl-marker">&gt;</span> Exposed to international masterclasses on social impact strategy and scaling ventures.</li>
+        <li><span class="hl-marker">&gt;</span> Expanded geographic networks by pitching ideas to global academic mentors.</li>
+      </ul>
+      <div class="edu-chip-row">
+        <span class="edu-chip">Mentorship</span>
+        <span class="edu-chip">Global</span>
+        <span class="edu-chip">Impact</span>
+      </div>
+    </article>
+
+    <!-- Card 5 -->
+    <article class="edu-panel">
+      <div class="edu-panel-top">
+        <span class="edu-index">05.</span>
+        <div class="edu-meta-right">
+          <span class="edu-badge">COMPLETED</span>
+          <span class="edu-period">MAY 2025 - JUL 2025</span>
+        </div>
+      </div>
+      <div class="edu-brand-bar">
+        <img src="/ASSET/alibaba.png" alt="Alibaba Logo" class="edu-logo">
+        <div>
+          <h3 class="edu-degree">Digital Entrepreneurship Scholar</h3>
+          <p class="edu-school">Alibaba Global Initiatives</p>
+        </div>
+      </div>
+      <p class="edu-summary">Deep-dived into e-commerce strategy, digital economic inclusion, and venture building insights from global market landscapes.</p>
+      <div class="edu-divider"></div>
+      <ul class="edu-highlights">
+        <li><span class="hl-marker">&gt;</span> Analyzed operational business cases regarding digital transformations in logistics.</li>
+        <li><span class="hl-marker">&gt;</span> Acquired key metrics for driving small-to-medium enterprise cross-border growth.</li>
+      </ul>
+      <div class="edu-chip-row">
+        <span class="edu-chip">E-Commerce</span>
+        <span class="edu-chip">Venture</span>
+        <span class="edu-chip">Digital</span>
+      </div>
+    </article>
+
+    <!-- Card 6 -->
+    <article class="edu-panel">
+      <div class="edu-panel-top">
+        <span class="edu-index">06.</span>
+        <div class="edu-meta-right">
+          <span class="edu-badge edu-badge-active">CURRENT</span>
+          <span class="edu-period">JAN 2026 - PRESENT</span>
+        </div>
+      </div>
+      <div class="edu-brand-bar">
+        <img src="/ASSET/ventureslabalu.jpeg" alt="ALU Ventures Lab Logo" class="edu-logo">
+        <div>
+          <h3 class="edu-degree">Incubator Cohort Member</h3>
+          <p class="edu-school">ALU Ventures Lab 2026</p>
+        </div>
+      </div>
+      <p class="edu-summary">Developing clean tech and zero-carbon economic frameworks inside a specialized startup accelerator environment.</p>
+      <div class="edu-divider"></div>
+      <ul class="edu-highlights">
+        <li><span class="hl-marker">&gt;</span> Validating sustainable urban logistics structures for regional markets.</li>
+        <li><span class="hl-marker">&gt;</span> Securing functional pitch practices while scaling micro-enterprise metrics.</li>
+      </ul>
+      <div class="edu-chip-row">
+        <span class="edu-chip">Green Tech</span>
+        <span class="edu-chip">Incubator</span>
+        <span class="edu-chip">Operations</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ================= CERTIFICATIONS ================= -->
+<section id="certifications" class="grid-section">
+  <h2 class="grid-title">Certifications</h2>
+  <div class="grid-underline"></div>
+
+  <div class="grid-row grid-row-small">
+
+    <!-- Aspire Leaders Program -->
+    <div class="grid-card grid-card-small">
+      <div class="grid-img-box">
+        <img src="/ASSET/Aspire.jpg" alt="Aspire Leaders Program">
+      </div>
+      <p class="grid-label">Aspire Leaders Program</p>
     </div>
 
-    <!-- Item 2 -->
-    <div class="edu-card">
-      <div class="edu-image-box">
-        <img src="/ASSET/Aspire.jpg" alt="ASPIRE INSTITUTE">
+    <!-- Divas in AI -->
+    <div class="grid-card grid-card-small">
+      <div class="grid-img-box">
+        <img src="/ASSET/divas.jpg" alt="Divas in AI Mentorship Program">
       </div>
-      <div class="edu-content">
-        <h3 class="edu-institution">ASPIRE INSTITUTE</h3>
-        <p class="edu-programme">Aspire Leaders Programme 2025</p><a href="/ASSET/aspirecertificate.pdf" target="_blank">Certificate</a>
-        <div class="edu-dates">
-          <span><strong>Start:</strong> Jan 2025</span> &bull; <span><strong>End:</strong> Jul 2025</span>
-        </div>
-      </div>
+      <p class="grid-label">Divas in AI Mentorship Program</p>
     </div>
 
-    <!-- Item 3 -->
-    <div class="edu-card">
-      <div class="edu-image-box">
-        <img src="/ASSET/alibaba.png" alt="Alibaba Global Initiatives">
+    <!-- ALX Virtual Assistant -->
+    <div class="grid-card grid-card-small">
+      <div class="grid-img-box">
+        <img src="/ASSET/ALX.jpg" alt="Virtual Assistant Programme">
       </div>
-      <div class="edu-content">
-        <h3 class="edu-institution">Alibaba Global Initiatives & Africa's Business Heroes</h3>
-        <p class="edu-programme">Digital Lion Program</p><a href="/ASSET/alibabacertificate.jpg" target="_blank">Certificate</a>
-        <div class="edu-dates">
-          <span><strong>Start:</strong> Mar 2025</span> &bull; <span><strong>End:</strong> May 2025</span>
-        </div>
-      </div>
+      <p class="grid-label">Virtual Assistant Programme</p>
     </div>
 
-    <!-- Item 4 -->
-    <div class="edu-card">
-      <div class="edu-image-box">
-        <img src="/ASSET/ALCHE.jpg" alt="Centre for Entrepreneurship, ALU">
+        <!-- HP Data Science -->
+    <div class="grid-card grid-card-small">
+      <div class="grid-img-box">
+        <img src="/ASSET/hp.png" alt="HP Data Science and Analytics">
       </div>
-      <div class="edu-content">
-        <h3 class="edu-institution">Centre for Entrepreneurship, ALU</h3>
-        <p class="edu-programme">Ventures Lab Cohort 2026</p>
-        <div class="edu-dates">
-          <span><strong>Start:</strong> Feb 2026</span> &bull; <span><strong>End:</strong> Jun 2026</span>
-        </div>
+      <p class="grid-label">Data Science &amp; Analytics</p>
+    </div>
+
+    <!-- HP Social Entrepreneurship -->
+    <div class="grid-card grid-card-small">
+      <div class="grid-img-box">
+        <img src="/ASSET/hp.png" alt="HP Social Entrepreneurship">
       </div>
+      <p class="grid-label">Social Entrepreneurship</p>
+    </div>
+
+    <!-- ALX Ghana AI -->
+    <div class="grid-card grid-card-small">
+      <div class="grid-img-box">
+        <img src="/ASSET/ALX.jpg" alt="ALX Ghana AI Career Essentials">
+      </div>
+      <p class="grid-label">AI Career Essentials</p>
     </div>
 
   </div>
 </section>
+
 <!-- ================= COMPLETE EXPERIENCE & VOLUNTEERING TIMELINE ================= -->
 <section id="experience" class="experience-split-section">
   <div class="container position-relative">
@@ -439,66 +618,66 @@
 
     
 
-    <!-- ─── CATEGORY 1: TECH PROJECTS ─── -->
+   <!-- ─── CATEGORY 1: TECH PROJECTS ─── -->
 <div class="project-category-block mb-5">
   <h3 class="category-title mb-4">Tech Projects</h3>
   <div class="row g-4">
-    
-    <!-- Tech Project 1: RT Knits Innovation Challenge -->
+
+    <!-- Tech Project 1: RT Knits Agentic CMMS -->
     <div class="col-md-6 col-lg-4 col-xl-3">
       <div class="card project-card h-100">
         <div class="project-img-wrapper">
-          <!-- Make sure to place an appropriate manufacturing background image in your ASSET folder -->
-          <img src="/ASSET/project-one-thumbnail.jpg" class="card-img-top" alt="RT Knits Innovation Challenge">
+          <img src="/ASSET/rtknitss.png" class="card-img-top" alt="RT Knits Agentic CMMS">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Industrial Silence: System Automation</h5>
-          <p class="card-text">An agentic multi-lingual interface built over WhatsApp to solve a 24/7 manufacturing floor bottleneck. Automates technician routing routing and maps feedback loops to increase overall machine uptime.</p>
+          <h5 class="card-title">RT Knits Agentic CMMS</h5>
+          <p class="card-text">A multilingual WhatsApp-native AI agent that automates maintenance triage for a 1,700-worker knitting factory, replacing a single-coordinator bottleneck. Built with FastAPI, PostgreSQL, and Claude Haiku 4.5 to parse requests, prioritize faults on a 3-tier severity matrix, dispatch technicians, and auto-generate work orders in real time.</p>
         </div>
       </div>
     </div>
 
-    <!-- Tech Project 2: Earthquake Prediction -->
+    <!-- Tech Project 2: Z-Score Student Performance Analyzer -->
     <div class="col-md-6 col-lg-4 col-xl-3">
       <div class="card project-card h-100">
         <div class="project-img-wrapper">
-          <img src="/ASSET/earthquake.jpg" class="card-img-top" alt="Earthquake Prediction">
+          <img src="/ASSET/z.png" class="card-img-top" alt="Z-Score Student Performance Analyzer">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Python Program for Earthquake Prediction Two</h5>
-          <p class="card-text">A Python program designed to predict earthquake occurrences based on historical data and geological features.</p>
+          <h5 class="card-title">Z-Score Student Performance Analyzer</h5>
+          <p class="card-text">A Python program that applies Z-score analysis to student exam results, classifying performance as Outstanding, Average, or Needs Support, with scatter plot and bar chart visualisations.</p>
         </div>
       </div>
     </div>
 
-    <!-- Tech Project 3: Duplicate/Placeholder -->
+    <!-- Tech Project 3: Budget Tracker -->
     <div class="col-md-6 col-lg-4 col-xl-3">
       <div class="card project-card h-100">
         <div class="project-img-wrapper">
-          <img src="/ASSET/earthquake.jpg" class="card-img-top" alt="Earthquake Prediction">
+          <img src="/ASSET/budgettracker.png" class="card-img-top" alt="Budget Tracker">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Python Program for Earthquake Prediction Three</h5>
-          <p class="card-text">A Python program designed to predict earthquake occurrences based on historical data and geological features.</p>
+          <h5 class="card-title">Budget Tracker</h5>
+          <p class="card-text">A menu-driven CLI application for recording income and expenses, filtering transactions, and generating financial summaries, built with OOP principles in Python.</p>
         </div>
       </div>
     </div>
 
-    <!-- Tech Project 4: Project One Base placeholder -->
+    <!-- Tech Project 4: Hotel Guest Check-In & Room Booking System -->
     <div class="col-md-6 col-lg-4 col-xl-3">
       <div class="card project-card h-100">
         <div class="project-img-wrapper">
-          <img src="/ASSET/project-one-thumbnail.jpg" class="card-img-top" alt="Project One">
+          <img src="/ASSET/hotel.png" class="card-img-top" alt="Hotel Guest Check-In and Room Booking System">
         </div>
         <div class="card-body">
-          <h5 class="card-title">Project One</h5>
-          <p class="card-text">Short description of what it does and the tech used.</p>
+          <h5 class="card-title">Hotel Booking & Check-In System</h5>
+          <p class="card-text">A modular Python system for managing guest records, room availability, and reservations with real-time check-in and check-out tracking, using persistent CSV-based storage across guest, room, and booking modules.</p>
         </div>
       </div>
     </div>
 
   </div>
 </div>
+
 
     <!-- ─── CATEGORY 2: SOCIAL PROJECTS ─── -->
     <div class="project-category-block">
@@ -638,7 +817,7 @@
 
         <section id="hobbies" class="py-5 bg-light">
             <div class="container">
-                <h2 class="section-title text-center">Hobbies &amp; Pastimes</h2>
+                <h2 class="section-title text-center">Hobbies</h2>
                 <div class="row g-4">
                     <div class="col-md-3">
                         <img src="/ASSET/SPORTS.jpg" alt="Playing football" class="img-fluid rounded hobby-img">
@@ -652,6 +831,10 @@
                     <div class="col-md-3">
                         <img src="/ASSET/swim.jpg" alt="Swimming" class="img-fluid rounded hobby-img">
                         <p class="text-center mt-2">Swimming</p>
+                    </div>
+                   <div class="col-md-3">
+                        <img src="/ASSET/movie.jpg" alt="Movies" class="img-fluid rounded hobby-img">
+                        <p class="text-center mt-2">MOVIES</p>
                     </div>
                 </div>
             </div>
