@@ -1,3 +1,4 @@
+/* resetting the basics so browsers stop fighting me */
 * {
     margin: 0;
     padding: 0;
@@ -14,25 +15,22 @@ h1, h2, h3 {
     font-weight: 700;
 }
 
+
 .section-title {
     margin-bottom: 2.5rem;
     font-size: 2rem;
     color: green;
     position: relative;
     padding-bottom: 0.75rem;
-    
 }
-
 
 .about-content .grid-main {
   font-size: 2.5rem;
-  color: var(--text-dark); /* Or your primary heading color */
+  color: var(--text-dark);
   margin-bottom: 10px;
 }
 
-
-/*ABOUT SECTION & PROFILE CARD  */
-
+/* ================= ABOUT & PROFILE CARD ================= */
 .about-section {
   background-color: #0b0f19;
   padding: 80px 24px;
@@ -67,7 +65,6 @@ h1, h2, h3 {
   margin: 0;
 }
 
-/* Main Outer Card Frame */
 .about-content-card {
   background-color: #141b2d;
   border: 1px solid #222733;
@@ -79,7 +76,6 @@ h1, h2, h3 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
-/* Profile Image Wrapper */
 .profile-card {
   flex-shrink: 0;
   display: flex;
@@ -91,7 +87,7 @@ h1, h2, h3 {
   width: 240px;
   height: 240px;
   position: relative;
-  border-radius: 50%; 
+  border-radius: 50%;
   padding: 4px;
   background: linear-gradient(135deg, #ff5a5f, rgba(255, 90, 95, 0.2));
   box-shadow: 0 8px 25px rgba(255, 90, 95, 0.2);
@@ -100,13 +96,12 @@ h1, h2, h3 {
 .profile-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   border-radius: 50%;
   border: 4px solid #141b2d;
   display: block;
 }
 
-/* Text Content */
 .about-text-content {
   flex-grow: 1;
 }
@@ -132,9 +127,8 @@ h1, h2, h3 {
 }
 
 .highlight-text {
-  color: green; 
+  color: green;
   font-weight: 1000;
-  
 }
 
 @media (max-width: 992px) {
@@ -150,6 +144,7 @@ h1, h2, h3 {
     height: 190px;
   }
 }
+
 #me {
     text-align: center;
     display: flex;
@@ -158,6 +153,7 @@ h1, h2, h3 {
     justify-content: center;
     gap: 20px;
 }
+
 .section-title::after {
     content: "";
     position: absolute;
@@ -168,22 +164,22 @@ h1, h2, h3 {
     height: 3px;
     background-color: #4a6cf7;
 }
-/* Aesthetic Sticky Navigation Bar: Warm Cream & Soft Mint Light Theme */
+
+/* sticky nav bar, warm cream tone */
 #mainNav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(247, 244, 240, 0.98); /* Soft, warm, creamy light frosted tint */
+    background: rgba(247, 244, 240, 0.98);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(46, 125, 50, 0.15); /* Gentle green-tinted border */
+    border-bottom: 1px solid rgba(46, 125, 50, 0.15);
     transition: background-color 0.3s ease;
     padding: 0.75rem 2rem;
 }
 
-/* Align and style navigation items */
 #mainNav .navbar-nav,
 #mainNav ul.nav,
 #mainNav .nav-links {
@@ -195,37 +191,37 @@ h1, h2, h3 {
     padding: 0;
 }
 
-/* Turn each link into a sleek, warm light pill button */
-#mainNav .nav-link, 
+#mainNav .nav-link,
 #mainNav a {
-    color: #2c3531; /* Deep, rich charcoal-green text */
-    background-color: rgba(46, 125, 50, 0.05); /* Soft faint green pill base */
+    color: #2c3531;
+    background-color: rgba(46, 125, 50, 0.05);
     border: 1px solid rgba(46, 125, 50, 0.1);
     padding: 0.5rem 1.1rem;
-    border-radius: 50rem; /* Smooth pill button shape */
+    border-radius: 50rem;
     font-size: 0.9rem;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.25s ease-in-out;
 }
 
-/* Hover and active states: Beautiful vibrant green with a soft glowing accent */
-#mainNav .nav-link:hover, 
+#mainNav .nav-link:hover,
 #mainNav a:hover,
 #mainNav .nav-link.active,
 #mainNav a.active {
     color: burlywood;
-    background-color: #2e7d32; /* Rich fresh green */
+    background-color: #2e7d32;
     border-color: #2e7d32;
     transform: translateY(-2px);
     box-shadow: 0 4px 14px rgba(46, 125, 50, 0.3);
 }
+
+/* hero, background photo with a dark gradient over it */
 .hero-section {
     position: relative;
     min-height: 110vh;
     display: flex;
     align-items: center;
-    background-image: url('/ASSET/deen.JPG');
+    background-image: url('/assets/deen.jpg');
     background-size: cover;
     background-position: center right;
     overflow: hidden;
@@ -248,11 +244,12 @@ h1, h2, h3 {
     border-radius: 8px;
     align-self: center;
 }
-.sports{
+
+.sports {
     width: 500px;
     height: 300px;
     border-radius: 8px;
-    align-self: center; 
+    align-self: center;
 }
 
 .hero-content {
@@ -309,19 +306,19 @@ h1, h2, h3 {
     background-color: #ff5a5f;
     margin-top: 3rem;
 }
-/* Custom Category Title Accents */
+
+/* project category headings */
 .category-title {
   font-size: 1.5rem;
   font-weight: 700;
   color: #1f2937;
-  border-left: 4px solid #2563eb; /* Clean blue tag line */
+  border-left: 4px solid #2563eb;
   padding-left: 12px;
 }
 
-/* Forces image containers to remain perfectly consistent */
 .project-img-wrapper {
   width: 100%;
-  height: 200px; /* Fixed height for crop matching */
+  height: 200px;
   overflow: hidden;
   background-color: #f3f4f6;
 }
@@ -329,11 +326,10 @@ h1, h2, h3 {
 .project-img-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Crops image cleanly without distortion */
+  object-fit: cover;
   object-position: center;
 }
 
-/* Elegant card hover interaction */
 .project-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 1px solid rgba(0,0,0,.125);
@@ -344,9 +340,7 @@ h1, h2, h3 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
 }
 
-
-
-/* Skills Section Component Styling */
+/* skills cards */
 .category-title-tag {
   color: #2e7d32;
   font-weight: 700;
@@ -370,6 +364,7 @@ h1, h2, h3 {
   box-shadow: 0 2px 6px rgba(46, 125, 50, 0.3);
   transition: width 1.5s ease;
 }
+
 .hobby-img {
     object-fit: cover;
     height: 260px;
@@ -408,7 +403,7 @@ footer {
 #conferences .profile-avatar {
   position: relative;
   width: 100%;
-  height: 450px; 
+  height: 450px;
   overflow: hidden;
 }
 
@@ -416,13 +411,14 @@ footer {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top center; 
+  object-position: top center;
   text-align: center;
-  text-spacing-trim:space-all;
+  text-spacing-trim: space-all;
 }
-/* ================= EDUCATION SECTION  */
+
+/* ================= EDUCATION SECTION ================= */
 .edu-section {
-  max-width: 1200px; /* Expanded so 2 large cards can fit next to each other */
+  max-width: 1200px;
   margin: 0 auto;
   padding: 80px 24px;
   font-family: 'Inter', 'Segoe UI', sans-serif;
@@ -448,15 +444,13 @@ footer {
   margin: 0;
 }
 
-/* Enforces exactly two columns side-by-side */
 .edu-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 32px; /* Generous spacing between cards */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
   width: 100%;
 }
 
-/* Panel card configuration */
 .edu-panel {
   position: relative;
   background: linear-gradient(160deg, #12141c 0%, #0b0d13 100%);
@@ -465,15 +459,15 @@ footer {
   padding: 28px;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Ensures all cards in the row share equal heights */
+  height: 100%;
   transition: border-color 0.25s ease, transform 0.25s ease;
 }
 
-/* FIXES LARGE IMAGES: This stops the image from breaking the row heights */
+/* keeps oversized logos from breaking card height */
 .edu-panel img {
   width: 100%;
-  height: 200px; /* Forces a uniform height for the banner image */
-  object-fit: cover; /* Crops cleanly like a banner without squeezing */
+  height: 200px;
+  object-fit: cover;
   border-radius: 8px;
   margin-bottom: 20px;
 }
@@ -531,10 +525,9 @@ footer {
 
 .edu-school1 {
   font-size: 0.9rem;
-  color:white;
+  color: white;
   margin: 0 0 16px 0;
 }
-
 
 .edu-summary {
   font-size: 0.92rem;
@@ -576,7 +569,7 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  margin-top: auto; /* Keeps your custom pills perfectly sitting at the base */
+  margin-top: auto;
 }
 
 .edu-chip {
@@ -589,29 +582,25 @@ footer {
   border-radius: 20px;
 }
 
-/* Seamless mobile support */
 @media (max-width: 992px) {
   .edu-grid {
-    grid-template-columns: 1fr; /* Drops down nicely to single column layout on smaller screens */
+    grid-template-columns: 1fr;
     gap: 24px;
   }
   .edu-panel img {
-    height: 10px; /* Slightly shorter image heights on mobile */
+    height: 10px;
   }
 }
 
-
-/* Smooth SVG Fill and Transform Transition */
+/* footer social icons, brand color on hover */
 footer ul li a svg {
   transition: fill 0.3s ease, transform 0.2s ease;
 }
 
-/* Lift effect on hover */
 footer ul li a:hover svg {
   transform: translateY(-3px);
 }
 
-/* Brand Colors on Hover */
 footer ul li a[title="Facebook"]:hover svg {
   fill: #1877F2;
 }
@@ -632,11 +621,9 @@ footer ul li a[title="GitHub"]:hover svg {
   fill: #6e5494;
 }
 
-
-
-/* ================= SIDE-BY-SIDE EXPERIENCE LAYOUT ================= */
+/* ================= EXPERIENCE TIMELINE ================= */
 .experience-split-section {
-  background-color: #0b0f19; /* Matching the dark theme in the image */
+  background-color: #0b0f19;
   padding: 90px 0;
   color: #ffffff;
 }
@@ -660,23 +647,10 @@ footer ul li a[title="GitHub"]:hover svg {
   margin-top: 30px;
 }
 
-/* Central vertical layout axis line */
-.center-line {
-  position: absolute;
-  left: 30%;
-  top: 0;
-  bottom: 0;
-  width: 2px;
-  background-color: #ff5a5f33; /* Soft line */
-  transform: translateX(-50%);
-  z-index: 1;
-}
-
 .timeline-row {
   z-index: 2;
 }
 
-/* Center timeline nodes matching image circles precisely */
 .timeline-node {
   position: absolute;
   left: 50%;
@@ -695,7 +669,6 @@ footer ul li a[title="GitHub"]:hover svg {
   z-index: 10;
 }
 
-/* Dark Layout Cards Structure */
 .resume-card {
   background-color: #141b2d;
   border: 1px solid #222733;
@@ -706,7 +679,6 @@ footer ul li a[title="GitHub"]:hover svg {
   transition: transform 0.3s ease;
 }
 
-/* Upper Border Frame Glow highlight for current job */
 .current-job {
   border: 1px solid #ff5a5f77;
   box-shadow: 0 0 25px rgba(255, 90, 95, 0.08);
@@ -719,20 +691,18 @@ footer ul li a[title="GitHub"]:hover svg {
   margin-bottom: 15px;
 }
 
-
 .company-logo-holder {
-  width: 80px;         /* Increased from 44px to make it larger */
-  height: 80px;        /* Increased from 44px to maintain a perfect square shape */
-  background-color: #374151; /* Placeholder color for visibility */
-  border-radius: 10px; /* Slightly smoother rounded corners for the larger size */
+  width: 80px;
+  height: 80px;
+  background-color: #374151;
+  border-radius: 10px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   border: 1px solid #2d3548;
-  flex-shrink: 0;      /* Prevents the image grid container from squeezing horizontally */
+  flex-shrink: 0;
 }
-
 
 .timeline-brand-img {
   width: 100%;
@@ -750,6 +720,12 @@ footer ul li a[title="GitHub"]:hover svg {
   border-radius: 20px;
 }
 
+/* volunteer roles get a green pill instead of the default red */
+.status-pill.pill-volunteer {
+  background-color: #22c55e25;
+  color: #22c55e;
+}
+
 .pill {
   background-color: green;
   color: black;
@@ -758,9 +734,6 @@ footer ul li a[title="GitHub"]:hover svg {
   padding: 4px 10px;
   border-radius: 20px;
 }
-
-
-
 
 .role-title {
   font-size: 21px;
@@ -785,17 +758,29 @@ footer ul li a[title="GitHub"]:hover svg {
 
 .badge1 {
   font-size: 12px;
-  color:green;
+  color: green;
   font-weight: 600;
   margin-bottom: 14px;
 }
 
-.time-frame-badge1{
-
+.time-frame-badge1 {
   font-size: 12px;
-  color:  green;
+  color: green;
   font-weight: 600;
-  margin-bottom: 14px
+  margin-bottom: 14px;
+}
+
+/* short bullet lists inside experience cards */
+.compact-bullets {
+  padding-left: 18px;
+  margin-top: 8px;
+}
+
+.compact-bullets li {
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #94a3b8;
+  line-height: 1.5;
 }
 
 .skills-tag-group {
@@ -813,12 +798,7 @@ footer ul li a[title="GitHub"]:hover svg {
   border-radius: 20px;
 }
 
-/* ================= MOBILE RESPONSIVENESS ================= */
 @media (max-width: 768px) {
-  .center-line {
-    left: 20px;
-    transform: none;
-  }
   .timeline-node {
     left: 20px;
     transform: translateX(-50%);
@@ -833,8 +813,7 @@ footer ul li a[title="GitHub"]:hover svg {
   }
 }
 
-
-/* ================= GRID SECTIONS (Education & Certifications) ================= */
+/* ================= CERTIFICATIONS GRID ================= */
 .grid-section {
   max-width: 1100px;
   margin: 0 auto;
@@ -849,12 +828,10 @@ footer ul li a[title="GitHub"]:hover svg {
   margin: 0 0 14px 0;
 }
 
-
-.grid-main{
+.grid-main {
   text-align: center;
   font-size: 30px;
-  color: #000;;
-
+  color: #000;
 }
 
 .grid-underline {
@@ -864,14 +841,12 @@ footer ul li a[title="GitHub"]:hover svg {
   margin-bottom: 36px;
 }
 
-/* Row of cards, wraps as needed */
 .grid-row {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
 }
 
-/* Standard card (education row) */
 .grid-card {
   flex: 1 1 200px;
   max-width: 220px;
@@ -900,6 +875,7 @@ footer ul li a[title="GitHub"]:hover svg {
   color: #1a1a1a;
   margin: 0;
 }
+
 .grid-row-small {
   gap: 18px;
 }
@@ -919,34 +895,30 @@ footer ul li a[title="GitHub"]:hover svg {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 6px; 
+    gap: 6px;
     border-radius: 30px;
     padding: 6px 14px;
-    background-color: rgba(0, 229, 255, 0.05); 
-    border: 1px solid green; 
-    color: green; 
+    background-color: rgba(0, 229, 255, 0.05);
+    border: 1px solid green;
+    color: green;
     font-family: 'Poppins', sans-serif;
-    font-size: 0.78rem; 
+    font-size: 0.78rem;
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 0.3px;
-    
     cursor: pointer;
-    margin-top: 12px; 
+    margin-top: 12px;
     transition: all 0.25s ease;
 }
 
-/* Playful Hover Interaction */
 #certificate-btn:hover {
-    background-color: lightgreen; 
-    color: #0b0d13; 
-    border-color:   black;
-    box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3); 
+    background-color: lightgreen;
+    color: #0b0d13;
+    border-color: black;
+    box-shadow: 0 4px 12px rgba(0, 229, 255, 0.3);
 }
 
-
-/* ================= CONTACT & FOOTER SECTION STYLES ================= */
-
+/* ================= CONTACT & FOOTER ================= */
 .contact-section {
   background-color: #0b0f19;
   padding: 100px 24px 20px;
@@ -965,7 +937,6 @@ footer ul li a[title="GitHub"]:hover svg {
   padding-bottom: 60px;
 }
 
-/* --- Column 1: Info & Social Icons --- */
 .contact-info {
   flex: 1;
   max-width: 360px;
@@ -1024,7 +995,6 @@ footer ul li a[title="GitHub"]:hover svg {
   box-shadow: 0 5px 15px rgba(255, 90, 95, 0.3);
 }
 
-/* --- Column 2: Form Wrapper & Inputs --- */
 .contact-form-wrapper {
   flex: 1.3;
   background-color: #141b2d;
@@ -1098,7 +1068,6 @@ footer ul li a[title="GitHub"]:hover svg {
   transform: translateY(-2px);
 }
 
-/* --- Column 3: Quick Links --- */
 .quick-links-div {
   flex: 0.8;
   min-width: 160px;
@@ -1133,7 +1102,6 @@ footer ul li a[title="GitHub"]:hover svg {
   padding-left: 6px;
 }
 
-/* --- Footer Bottom --- */
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.06);
   padding: 24px 0;
@@ -1171,15 +1139,13 @@ footer ul li a[title="GitHub"]:hover svg {
   }
 }
 
-/* --- Responsive Layout for Mobile & Tablets --- */
 @media (max-width: 992px) {
   .contact-container {
     flex-direction: column;
     gap: 40px;
   }
-  
-  .contact-info, 
-   
+
+  .contact-info,
   .quick-links-div {
     margin-left: auto;
     text-align: right;
@@ -1188,8 +1154,9 @@ footer ul li a[title="GitHub"]:hover svg {
   }
 
   .quick-links-list {
-    list-style: none
+    list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
   }
+}
