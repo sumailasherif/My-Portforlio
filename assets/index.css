@@ -221,7 +221,7 @@ h1, h2, h3 {
     min-height: 110vh;
     display: flex;
     align-items: center;
-    background-image: url('/assets/deen.jpg');
+    background-image: url('deen.jpg');
     background-size: cover;
     background-position: center right;
     overflow: hidden;
