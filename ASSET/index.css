@@ -346,14 +346,30 @@ h1, h2, h3 {
 
 
 
-.skill-box {
-    background-color: #4a6cf7;
-    color: #fff;
-    padding: 1.2rem;
-    border-radius: 8px;
-    font-weight: 600;
+/* Skills Section Component Styling */
+.category-title-tag {
+  color: #2e7d32;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
 }
 
+.skills-card {
+  background: #ffffff;
+  border: 1px solid rgba(46, 125, 50, 0.12) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(46, 125, 50, 0.1) !important;
+}
+
+.skills-section .progress-bar {
+  background: linear-gradient(90deg, #2e7d32, #4caf50) !important;
+  box-shadow: 0 2px 6px rgba(46, 125, 50, 0.3);
+  transition: width 1.5s ease;
+}
 .hobby-img {
     object-fit: cover;
     height: 260px;
@@ -404,7 +420,7 @@ footer {
   text-align: center;
   text-spacing-trim:space-all;
 }
-/* ================= EDUCATION SECTION — NEON THEME ================= */
+/* ================= EDUCATION SECTION  */
 .edu-section {
   max-width: 1200px; /* Expanded so 2 large cards can fit next to each other */
   margin: 0 auto;
@@ -456,7 +472,7 @@ footer {
 /* FIXES LARGE IMAGES: This stops the image from breaking the row heights */
 .edu-panel img {
   width: 100%;
-  height: 220px; /* Forces a uniform height for the banner image */
+  height: 200px; /* Forces a uniform height for the banner image */
   object-fit: cover; /* Crops cleanly like a banner without squeezing */
   border-radius: 8px;
   margin-bottom: 20px;
